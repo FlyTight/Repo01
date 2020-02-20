@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [01/Feb/2020:15:39:55 +0800] "GET /mavenSSM HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [01/Feb/2020:15:39:55 +0800] "GET /mavenSSM/ HTTP/1.1" 200 107 http-bio-8080-exec-3 605
+0:0:0:0:0:0:0:1 - - [01/Feb/2020:15:39:56 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-4 0
+0:0:0:0:0:0:0:1 - - [01/Feb/2020:15:39:58 +0800] "GET /mavenSSM/user/list HTTP/1.1" 200 598 http-bio-8080-exec-5 1156

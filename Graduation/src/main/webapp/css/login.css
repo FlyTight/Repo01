@@ -1,0 +1,39 @@
+body{
+	background-image: url(../img/2.png);
+	background-size: cover;
+}
+
+
+#a{
+	border: 1px black solid;
+	position: absolute;
+	align-content: center;
+	left: 330px;
+  	top: 150px;
+	width: 900px;
+	height: 400px;
+	background-color: white;
+	background:rgba(255,255,255,0.5);
+	border-radius: 5px;
+}
+
+#a1{
+	float: left;
+	width: 580px;
+	height: 400px;
+
+	background-size: 100%,400px;
+	
+}
+#a2{
+	float: right;
+	width: 310px;
+	height: 400px;
+	
+}
+table{
+	border-spacing:0px 50px;
+}
+a:hover{
+	text-decoration:none;
+}

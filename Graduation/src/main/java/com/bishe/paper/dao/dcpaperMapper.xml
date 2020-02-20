@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bishe.paper.dao.dcpaperMapper" >
+  <resultMap id="BaseResultMap" type="com.bishe.paper.bean.dcpaper" >
+    <id column="did" property="did" jdbcType="INTEGER" />
+    <result column="sex" property="sex" jdbcType="VARCHAR" />
+    <result column="school" property="school" jdbcType="VARCHAR" />
+    <result column="a3" property="a3" jdbcType="VARCHAR" />
+    <result column="a4" property="a4" jdbcType="VARCHAR" />
+    <result column="a5" property="a5" jdbcType="VARCHAR" />
+    <result column="a6" property="a6" jdbcType="VARCHAR" />
+    <result column="a7" property="a7" jdbcType="VARCHAR" />
+    <result column="a8" property="a8" jdbcType="VARCHAR" />
+    <result column="a9" property="a9" jdbcType="VARCHAR" />
+    <result column="a10" property="a10" jdbcType="VARCHAR" />
+    <result column="a11" property="a11" jdbcType="VARCHAR" />
+    <result column="a12" property="a12" jdbcType="VARCHAR" />
+    <result column="a13" property="a13" jdbcType="VARCHAR" />
+    <result column="a14" property="a14" jdbcType="VARCHAR" />
+    <result column="a15" property="a15" jdbcType="VARCHAR" />
+    <result column="a16" property="a16" jdbcType="VARCHAR" />
+    <result column="a17" property="a17" jdbcType="VARCHAR" />
+    <result column="a18" property="a18" jdbcType="VARCHAR" />
+    <result column="a19" property="a19" jdbcType="VARCHAR" />
+    <result column="a20" property="a20" jdbcType="VARCHAR" />
+    <result column="a21" property="a21" jdbcType="VARCHAR" />
+    <result column="a22" property="a22" jdbcType="VARCHAR" />
+    <result column="a23" property="a23" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    did, sex, school, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15, a16, 
+    a17, a18, a19, a20, a21, a22, a23
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.bishe.paper.bean.dcpaperExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from dcpaper
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from dcpaper
+    where did = #{did,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from dcpaper
+    where did = #{did,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.bishe.paper.bean.dcpaperExample" >
+    delete from dcpaper
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.bishe.paper.bean.dcpaper" >
+    insert into dcpaper (did, sex, school, 
+      a3, a4, a5, a6, 
+      a7, a8, a9, a10, 
+      a11, a12, a13, a14, 
+      a15, a16, a17, a18, 
+      a19, a20, a21, a22, 
+      a23)
+    values (#{did,jdbcType=INTEGER}, #{sex,jdbcType=VARCHAR}, #{school,jdbcType=VARCHAR}, 
+      #{a3,jdbcType=VARCHAR}, #{a4,jdbcType=VARCHAR}, #{a5,jdbcType=VARCHAR}, #{a6,jdbcType=VARCHAR}, 
+      #{a7,jdbcType=VARCHAR}, #{a8,jdbcType=VARCHAR}, #{a9,jdbcType=VARCHAR}, #{a10,jdbcType=VARCHAR}, 
+      #{a11,jdbcType=VARCHAR}, #{a12,jdbcType=VARCHAR}, #{a13,jdbcType=VARCHAR}, #{a14,jdbcType=VARCHAR}, 
+      #{a15,jdbcType=VARCHAR}, #{a16,jdbcType=VARCHAR}, #{a17,jdbcType=VARCHAR}, #{a18,jdbcType=VARCHAR}, 
+      #{a19,jdbcType=VARCHAR}, #{a20,jdbcType=VARCHAR}, #{a21,jdbcType=VARCHAR}, #{a22,jdbcType=VARCHAR}, 
+      #{a23,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.bishe.paper.bean.dcpaper" >
+    insert into dcpaper
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="did != null" >
+        did,
+      </if>
+      <if test="sex != null" >
+        sex,
+      </if>
+      <if test="school != null" >
+        school,
+      </if>
+      <if test="a3 != null" >
+        a3,
+      </if>
+      <if test="a4 != null" >
+        a4,
+      </if>
+      <if test="a5 != null" >
+        a5,
+      </if>
+      <if test="a6 != null" >
+        a6,
+      </if>
+      <if test="a7 != null" >
+        a7,
+      </if>
+      <if test="a8 != null" >
+        a8,
+      </if>
+      <if test="a9 != null" >
+        a9,
+      </if>
+      <if test="a10 != null" >
+        a10,
+      </if>
+      <if test="a11 != null" >
+        a11,
+      </if>
+      <if test="a12 != null" >
+        a12,
+      </if>
+      <if test="a13 != null" >
+        a13,
+      </if>
+      <if test="a14 != null" >
+        a14,
+      </if>
+      <if test="a15 != null" >
+        a15,
+      </if>
+      <if test="a16 != null" >
+        a16,
+      </if>
+      <if test="a17 != null" >
+        a17,
+      </if>
+      <if test="a18 != null" >
+        a18,
+      </if>
+      <if test="a19 != null" >
+        a19,
+      </if>
+      <if test="a20 != null" >
+        a20,
+      </if>
+      <if test="a21 != null" >
+        a21,
+      </if>
+      <if test="a22 != null" >
+        a22,
+      </if>
+      <if test="a23 != null" >
+        a23,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="did != null" >
+        #{did,jdbcType=INTEGER},
+      </if>
+      <if test="sex != null" >
+        #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="school != null" >
+        #{school,jdbcType=VARCHAR},
+      </if>
+      <if test="a3 != null" >
+        #{a3,jdbcType=VARCHAR},
+      </if>
+      <if test="a4 != null" >
+        #{a4,jdbcType=VARCHAR},
+      </if>
+      <if test="a5 != null" >
+        #{a5,jdbcType=VARCHAR},
+      </if>
+      <if test="a6 != null" >
+        #{a6,jdbcType=VARCHAR},
+      </if>
+      <if test="a7 != null" >
+        #{a7,jdbcType=VARCHAR},
+      </if>
+      <if test="a8 != null" >
+        #{a8,jdbcType=VARCHAR},
+      </if>
+      <if test="a9 != null" >
+        #{a9,jdbcType=VARCHAR},
+      </if>
+      <if test="a10 != null" >
+        #{a10,jdbcType=VARCHAR},
+      </if>
+      <if test="a11 != null" >
+        #{a11,jdbcType=VARCHAR},
+      </if>
+      <if test="a12 != null" >
+        #{a12,jdbcType=VARCHAR},
+      </if>
+      <if test="a13 != null" >
+        #{a13,jdbcType=VARCHAR},
+      </if>
+      <if test="a14 != null" >
+        #{a14,jdbcType=VARCHAR},
+      </if>
+      <if test="a15 != null" >
+        #{a15,jdbcType=VARCHAR},
+      </if>
+      <if test="a16 != null" >
+        #{a16,jdbcType=VARCHAR},
+      </if>
+      <if test="a17 != null" >
+        #{a17,jdbcType=VARCHAR},
+      </if>
+      <if test="a18 != null" >
+        #{a18,jdbcType=VARCHAR},
+      </if>
+      <if test="a19 != null" >
+        #{a19,jdbcType=VARCHAR},
+      </if>
+      <if test="a20 != null" >
+        #{a20,jdbcType=VARCHAR},
+      </if>
+      <if test="a21 != null" >
+        #{a21,jdbcType=VARCHAR},
+      </if>
+      <if test="a22 != null" >
+        #{a22,jdbcType=VARCHAR},
+      </if>
+      <if test="a23 != null" >
+        #{a23,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.bishe.paper.bean.dcpaperExample" resultType="java.lang.Integer" >
+    select count(*) from dcpaper
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update dcpaper
+    <set >
+      <if test="record.did != null" >
+        did = #{record.did,jdbcType=INTEGER},
+      </if>
+      <if test="record.sex != null" >
+        sex = #{record.sex,jdbcType=VARCHAR},
+      </if>
+      <if test="record.school != null" >
+        school = #{record.school,jdbcType=VARCHAR},
+      </if>
+      <if test="record.a3 != null" >
+        a3 = #{record.a3,jdbcType=VARCHAR},
+      </if>
+      <if test="record.a4 != null" >
+        a4 = #{record.a4,jdbcType=VARCHAR},
+      </if>
+      <if test="record.a5 != null" >
+        a5 = #{record.a5,jdbcType=VARCHAR},
+      </if>
+      <if test="record.a6 != null" >
+        a6 = #{record.a6,jdbcType=VARCHAR},
+      </if>
+      <if test="record.a7 != null" >
+        a7 = #{record.a7,jdbcType=VARCHAR},
+      </if>
+      <if test="record.a8 != null" >
+        a8 = #{record.a8,jdbcType=VARCHAR},
+      </if>
+      <if test="record.a9 != null" >
+        a9 = #{record.a9,jdbcType=VARCHAR},
+      </if>
+      <if test="record.a10 != null" >
+        a10 = #{record.a10,jdbcType=VARCHAR},
+      </if>
+      <if test="record.a11 != null" >
+        a11 = #{record.a11,jdbcType=VARCHAR},
+      </if>
+      <if test="record.a12 != null" >
+        a12 = #{record.a12,jdbcType=VARCHAR},
+      </if>
+      <if test="record.a13 != null" >
+        a13 = #{record.a13,jdbcType=VARCHAR},
+      </if>
+      <if test="record.a14 != null" >
+        a14 = #{record.a14,jdbcType=VARCHAR},
+      </if>
+      <if test="record.a15 != null" >
+        a15 = #{record.a15,jdbcType=VARCHAR},
+      </if>
+      <if test="record.a16 != null" >
+        a16 = #{record.a16,jdbcType=VARCHAR},
+      </if>
+      <if test="record.a17 != null" >
+        a17 = #{record.a17,jdbcType=VARCHAR},
+      </if>
+      <if test="record.a18 != null" >
+        a18 = #{record.a18,jdbcType=VARCHAR},
+      </if>
+      <if test="record.a19 != null" >
+        a19 = #{record.a19,jdbcType=VARCHAR},
+      </if>
+      <if test="record.a20 != null" >
+        a20 = #{record.a20,jdbcType=VARCHAR},
+      </if>
+      <if test="record.a21 != null" >
+        a21 = #{record.a21,jdbcType=VARCHAR},
+      </if>
+      <if test="record.a22 != null" >
+        a22 = #{record.a22,jdbcType=VARCHAR},
+      </if>
+      <if test="record.a23 != null" >
+        a23 = #{record.a23,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update dcpaper
+    set did = #{record.did,jdbcType=INTEGER},
+      sex = #{record.sex,jdbcType=VARCHAR},
+      school = #{record.school,jdbcType=VARCHAR},
+      a3 = #{record.a3,jdbcType=VARCHAR},
+      a4 = #{record.a4,jdbcType=VARCHAR},
+      a5 = #{record.a5,jdbcType=VARCHAR},
+      a6 = #{record.a6,jdbcType=VARCHAR},
+      a7 = #{record.a7,jdbcType=VARCHAR},
+      a8 = #{record.a8,jdbcType=VARCHAR},
+      a9 = #{record.a9,jdbcType=VARCHAR},
+      a10 = #{record.a10,jdbcType=VARCHAR},
+      a11 = #{record.a11,jdbcType=VARCHAR},
+      a12 = #{record.a12,jdbcType=VARCHAR},
+      a13 = #{record.a13,jdbcType=VARCHAR},
+      a14 = #{record.a14,jdbcType=VARCHAR},
+      a15 = #{record.a15,jdbcType=VARCHAR},
+      a16 = #{record.a16,jdbcType=VARCHAR},
+      a17 = #{record.a17,jdbcType=VARCHAR},
+      a18 = #{record.a18,jdbcType=VARCHAR},
+      a19 = #{record.a19,jdbcType=VARCHAR},
+      a20 = #{record.a20,jdbcType=VARCHAR},
+      a21 = #{record.a21,jdbcType=VARCHAR},
+      a22 = #{record.a22,jdbcType=VARCHAR},
+      a23 = #{record.a23,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.bishe.paper.bean.dcpaper" >
+    update dcpaper
+    <set >
+      <if test="sex != null" >
+        sex = #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="school != null" >
+        school = #{school,jdbcType=VARCHAR},
+      </if>
+      <if test="a3 != null" >
+        a3 = #{a3,jdbcType=VARCHAR},
+      </if>
+      <if test="a4 != null" >
+        a4 = #{a4,jdbcType=VARCHAR},
+      </if>
+      <if test="a5 != null" >
+        a5 = #{a5,jdbcType=VARCHAR},
+      </if>
+      <if test="a6 != null" >
+        a6 = #{a6,jdbcType=VARCHAR},
+      </if>
+      <if test="a7 != null" >
+        a7 = #{a7,jdbcType=VARCHAR},
+      </if>
+      <if test="a8 != null" >
+        a8 = #{a8,jdbcType=VARCHAR},
+      </if>
+      <if test="a9 != null" >
+        a9 = #{a9,jdbcType=VARCHAR},
+      </if>
+      <if test="a10 != null" >
+        a10 = #{a10,jdbcType=VARCHAR},
+      </if>
+      <if test="a11 != null" >
+        a11 = #{a11,jdbcType=VARCHAR},
+      </if>
+      <if test="a12 != null" >
+        a12 = #{a12,jdbcType=VARCHAR},
+      </if>
+      <if test="a13 != null" >
+        a13 = #{a13,jdbcType=VARCHAR},
+      </if>
+      <if test="a14 != null" >
+        a14 = #{a14,jdbcType=VARCHAR},
+      </if>
+      <if test="a15 != null" >
+        a15 = #{a15,jdbcType=VARCHAR},
+      </if>
+      <if test="a16 != null" >
+        a16 = #{a16,jdbcType=VARCHAR},
+      </if>
+      <if test="a17 != null" >
+        a17 = #{a17,jdbcType=VARCHAR},
+      </if>
+      <if test="a18 != null" >
+        a18 = #{a18,jdbcType=VARCHAR},
+      </if>
+      <if test="a19 != null" >
+        a19 = #{a19,jdbcType=VARCHAR},
+      </if>
+      <if test="a20 != null" >
+        a20 = #{a20,jdbcType=VARCHAR},
+      </if>
+      <if test="a21 != null" >
+        a21 = #{a21,jdbcType=VARCHAR},
+      </if>
+      <if test="a22 != null" >
+        a22 = #{a22,jdbcType=VARCHAR},
+      </if>
+      <if test="a23 != null" >
+        a23 = #{a23,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where did = #{did,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.bishe.paper.bean.dcpaper" >
+    update dcpaper
+    set sex = #{sex,jdbcType=VARCHAR},
+      school = #{school,jdbcType=VARCHAR},
+      a3 = #{a3,jdbcType=VARCHAR},
+      a4 = #{a4,jdbcType=VARCHAR},
+      a5 = #{a5,jdbcType=VARCHAR},
+      a6 = #{a6,jdbcType=VARCHAR},
+      a7 = #{a7,jdbcType=VARCHAR},
+      a8 = #{a8,jdbcType=VARCHAR},
+      a9 = #{a9,jdbcType=VARCHAR},
+      a10 = #{a10,jdbcType=VARCHAR},
+      a11 = #{a11,jdbcType=VARCHAR},
+      a12 = #{a12,jdbcType=VARCHAR},
+      a13 = #{a13,jdbcType=VARCHAR},
+      a14 = #{a14,jdbcType=VARCHAR},
+      a15 = #{a15,jdbcType=VARCHAR},
+      a16 = #{a16,jdbcType=VARCHAR},
+      a17 = #{a17,jdbcType=VARCHAR},
+      a18 = #{a18,jdbcType=VARCHAR},
+      a19 = #{a19,jdbcType=VARCHAR},
+      a20 = #{a20,jdbcType=VARCHAR},
+      a21 = #{a21,jdbcType=VARCHAR},
+      a22 = #{a22,jdbcType=VARCHAR},
+      a23 = #{a23,jdbcType=VARCHAR}
+    where did = #{did,jdbcType=INTEGER}
+  </update>
+</mapper>

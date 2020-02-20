@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="089bba5e-c050-40e1-9d4a-0ac2e29bbad2" name="Default Changelist" comment="666" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="package-info" />
+        <option value="jsf" />
+        <option value="Jspx File" />
+        <option value="JavaScript File" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="E:/devsoft/apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XC0X6cQhp91FqAxGC265Eppn2v" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="C:/Program Files/TortoiseSVN/bin" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bishe.Aspect" />
+      <recent name="com.bishe.user.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IDEAbook\Graduation\src\main\webapp\img" />
+      <recent name="E:\IDEAbook\Graduation\src\main\java\com\bishe\Jour\dao" />
+      <recent name="E:\IDEAbook\Graduation\src\main\java\com\bishe\Jour\bean" />
+      <recent name="E:\IDEAbook\Graduation\src\main\webapp\js" />
+      <recent name="E:\IDEAbook\Graduation\src\main\webapp\Backstage" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.panduan.lianxi">
+    <configuration name="DruidDataSourceTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Graduation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DruidDataSourceTest" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PageHelperTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Graduation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PageHelperTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="panduan.lianxi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Graduation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="panduan" />
+      <option name="METHOD_NAME" value="lianxi" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.panduan.lianxi" />
+        <item itemvalue="JUnit.PageHelperTest.test" />
+        <item itemvalue="JUnit.DruidDataSourceTest.test01" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration useDefault="false">C:\Program Files\TortoiseSVN\bin</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="089bba5e-c050-40e1-9d4a-0ac2e29bbad2" name="Default Changelist" comment="" />
+      <created>1580534805034</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580534805034</updated>
+      <workItem from="1580534807961" duration="8247000" />
+      <workItem from="1580621168318" duration="10066000" />
+      <workItem from="1580712079264" duration="5632000" />
+      <workItem from="1580784653297" duration="5256000" />
+      <workItem from="1580888580767" duration="5317000" />
+      <workItem from="1580894005718" duration="1119000" />
+      <workItem from="1580969332797" duration="2551000" />
+      <workItem from="1580972787380" duration="13359000" />
+      <workItem from="1581066218692" duration="2943000" />
+      <workItem from="1581128933811" duration="11728000" />
+      <workItem from="1581213287178" duration="2413000" />
+      <workItem from="1581236706515" duration="648000" />
+      <workItem from="1581297608525" duration="30000" />
+      <workItem from="1581490725995" duration="146000" />
+      <workItem from="1581592465088" duration="1990000" />
+      <workItem from="1581646498386" duration="3828000" />
+      <workItem from="1581734058457" duration="17801000" />
+      <workItem from="1581761654138" duration="618000" />
+      <workItem from="1581820057808" duration="3928000" />
+      <workItem from="1581903395094" duration="51000" />
+      <workItem from="1581905789426" duration="23881000" />
+      <workItem from="1581989364218" duration="11315000" />
+      <workItem from="1582075410225" duration="10295000" />
+      <workItem from="1582161991577" duration="2869000" />
+      <workItem from="1582166510606" duration="887000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="666" />
+    <option name="LAST_COMMIT_MESSAGE" value="666" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1581946009159">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1581946009159" />
+    <state x="397" y="328" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1580542254076">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="397" y="328" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1580542254076" />
+    <state x="523" y="14" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580970660165">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="523" y="14" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1580970660165" />
+    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581930168558">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1581930168558" />
+    <state x="321" y="13" key="CommitChangelistDialog2" timestamp="1582099382972">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="321" y="13" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582099382972" />
+    <state x="0" y="310" key="FileChooserDialogImpl" timestamp="1582094973313">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="310" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582094973313" />
+    <state width="1493" height="103" key="GridCell.Tab.0.bottom" timestamp="1582103250305">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="103" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582103250305" />
+    <state width="1493" height="103" key="GridCell.Tab.0.center" timestamp="1582103250305">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="103" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582103250305" />
+    <state width="1493" height="103" key="GridCell.Tab.0.left" timestamp="1582103250305">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="103" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582103250305" />
+    <state width="1493" height="103" key="GridCell.Tab.0.right" timestamp="1582103250305">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="103" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582103250305" />
+    <state x="313" y="64" key="SettingsEditor" timestamp="1582094980386">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="313" y="64" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582094980386" />
+    <state x="454" y="239" key="com.intellij.ide.util.TipDialog" timestamp="1582166524552">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="454" y="239" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582166524552" />
+    <state x="178" y="115" key="new project wizard" timestamp="1580537443397">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="115" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1580537443397" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1582026508173">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1582026508173" />
+    <state x="365" y="146" width="672" height="678" key="search.everywhere.popup" timestamp="1580535452541">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="365" y="146" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1580535452541" />
+    <state x="95" y="395" key="svn.passwordDialog" timestamp="1582100161184">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="95" y="395" key="svn.passwordDialog/0.0.1536.824@0.0.1536.824" timestamp="1582100161184" />
+    <state x="95" y="180" key="svn.repositoryBrowser" timestamp="1582096409134">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="95" y="180" key="svn.repositoryBrowser/0.0.1536.824@0.0.1536.824" timestamp="1582096409134" />
+    <state x="653" y="632" key="svn.upgradeDialog" timestamp="1582096411887">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="653" y="632" key="svn.upgradeDialog/0.0.1536.824@0.0.1536.824" timestamp="1582096411887" />
+  </component>
+</project>

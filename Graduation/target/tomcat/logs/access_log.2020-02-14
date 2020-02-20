@@ -1,0 +1,8 @@
+0:0:0:0:0:0:0:1 - - [14/Feb/2020:10:52:02 +0800] "GET /mavenSSM HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [14/Feb/2020:10:52:02 +0800] "GET /mavenSSM/ HTTP/1.1" 200 4490 http-bio-8080-exec-3 245
+0:0:0:0:0:0:0:1 - - [14/Feb/2020:10:52:08 +0800] "GET /mavenSSM/code/verify HTTP/1.1" 200 1888 http-bio-8080-exec-4 5966
+0:0:0:0:0:0:0:1 - - [14/Feb/2020:10:52:08 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-5 0
+0:0:0:0:0:0:0:1 - - [14/Feb/2020:10:52:21 +0800] "POST /mavenSSM/user/login HTTP/1.1" 200 1 http-bio-8080-exec-6 534
+0:0:0:0:0:0:0:1 - - [14/Feb/2020:10:52:22 +0800] "GET /mavenSSM/index.jsp HTTP/1.1" 200 4672 http-bio-8080-exec-7 136
+0:0:0:0:0:0:0:1 - - [14/Feb/2020:10:52:22 +0800] "GET /mavenSSM/css/index1.css HTTP/1.1" 304 - http-bio-8080-exec-9 69
+0:0:0:0:0:0:0:1 - - [14/Feb/2020:10:52:31 +0800] "GET /mavenSSM/paper/list/2 HTTP/1.1" 200 11898 http-bio-8080-exec-10 236

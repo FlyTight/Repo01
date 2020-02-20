@@ -1,0 +1,21 @@
+#diaocha{
+	min-height: 50px;
+	width: 800px;
+	padding-left:30px;
+	background-color: white;
+	align-content: center;
+	position: absolute;
+	left: 360px;
+	top: 200px;
+}
+.top{
+	border-top: 1px dashed #c2c2c2;
+}
+.a1{
+	font-weight: 800;
+	font-size: 14px;
+}
+
+.a2{
+	font-size: 15px;
+}

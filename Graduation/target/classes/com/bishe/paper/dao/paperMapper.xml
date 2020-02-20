@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bishe.paper.dao.paperMapper" >
+    <select id="getList" resultType="com.bishe.paper.bean.paper">
+        select * from paper where ptype = #{ptype}
+    </select>
+
+    <select id="getLists" resultType="com.bishe.paper.bean.paper">
+             select * from paper
+    </select>
+
+
+    <insert id="save">
+        insert into paper(ptype,title,A,B,C,D,Correct,Answer)
+        values(#{ptype},#{title},#{a},#{b},#{c},#{d},#{correct},#{answer})
+    </insert>
+
+    <select id="selectByPid" resultType="com.bishe.paper.bean.paper">
+        select * from paper where pid = #{pid}
+    </select>
+
+    <update id="update" >
+        update paper
+        <set >
+            <if test="ptype != null" >
+                ptype = #{ptype},
+            </if>
+            <if test="title != null" >
+                title = #{title},
+            </if>
+            <if test="a != null" >
+                A = #{a},
+            </if>
+            <if test="b != null" >
+                B = #{b},
+            </if>
+            <if test="c != null" >
+                C = #{c},
+            </if>
+            <if test="d != null" >
+                D = #{d},
+            </if>
+            <if test="correct != null" >
+                Correct = #{correct},
+            </if>
+            <if test="answer != null" >
+                Answer = #{answer},
+            </if>
+            </set>
+            where pid = #{pid}
+    </update>
+
+    <delete id="delete">
+        delete from paper where pid = #{pid}
+    </delete>
+</mapper>
